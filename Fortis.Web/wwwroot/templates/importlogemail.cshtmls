@@ -1,0 +1,164 @@
+@{
+    Layout = "masteremail.cshtmls";
+ }
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color:#1f1f1f; height:52px;">
+	<tbody><tr>
+		<td align="center">
+			<center>
+				<table border="0" cellpadding="0" cellspacing="0" width="600px" style="height:100%;">
+					<tbody><tr>
+						<td align="left" valign="middle" style="padding-left:20px;">
+							<img src="@Model.urllink/img/buceeslogo.png" width="100px" height="24px" alt="Buc-ees CPP logo">
+							<span style="font-size:26pt; color:#fff; float:right; margin-top:27px;">KnowBe4 Import Log</span>
+						</td>
+						<td align="right" valign="middle" style="padding-right:20px;">
+							<table border="0" cellpadding="0" cellspacing="0" width="200px" style="height:100%;">
+								<tbody><tr>
+								</tr>
+							</tbody></table>
+						</td>
+					</tr>
+				</tbody></table>
+			</center>
+		</td>
+	</tr>
+</tbody></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tbody>
+		<tr>
+			<td style="padding-bottom:20px;">
+				<center>
+					<table border="0" cellpadding="0" cellspacing="0" width="600px" style="height:100%;">
+						<tbody>
+							<tr>
+								<td valign="top" class="bodyContent">
+									<table border="0" cellpadding="20" cellspacing="0" width="100%">
+										<tbody>
+											<tr>
+												<td valign="top">
+													Import Date @DateTime.Now.ToString("M/dd/yyyy HH:mm")<br><br>
+													<h2 class="h2">Import Stats Summary</h2>
+													<br>
+													<div class="textdark">
+														<table>
+															<thead>
+                                                                <tr>
+                                                                    <th>Added</th>
+                                                                    <th>Updated</th>
+                                                                    <th>Deleted</th>
+                                                                </tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>@Model.addedcount</td>
+																	<td>@Model.updatecount</td>
+																	<td>@Model.deletedcount</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td valign="top">
+													<h2 class="h3">Users Added List</h2>
+													<br>
+													<div class="textdark">
+														<table>
+															<thead>
+                                                                <tr>
+                                                                    <th>Name</th>
+                                                                    <th>Email</th>
+                                                                </tr>
+															</thead>
+															<tbody>
+															@foreach(var i in Model.addedusers)
+															{
+																<tr>
+																	<td>@i.first_name @i.last_name</td>
+																	<td>@i.email</td>
+																</tr>
+															}
+															</tbody>
+														</table>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td valign="top">
+													<h2 class="h3">Users Deleted List</h2>
+													<br>
+													<div class="textdark">
+														<table>
+															<thead>
+                                                                <tr>
+                                                                    <th>Name</th>
+                                                                    <th>Email</th>
+                                                                </tr>
+															</thead>
+															<tbody>
+															@foreach(var i in Model.deletedusers)
+															{
+																<tr>
+																	<td>@i.first_name @i.last_name</td>
+																	<td>@i.email</td>
+																</tr>
+															}
+															</tbody>
+														</table>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td valign="top">
+													<h2 class="h3">Users Not Linkable to Kronos</h2>
+													<br>
+													<div class="textdark">
+														<table>
+															<thead>
+                                                                <tr>
+                                                                    <th>Name</th>
+                                                                    <th>Email</th>
+                                                                </tr>
+															</thead>
+															<tbody>
+															@foreach(var i in Model.nokronosusers)
+															{
+																<tr>
+																	<td>@i.first_name @i.last_name</td>
+																	<td>@i.email</td>
+																</tr>
+															}
+															</tbody>
+														</table>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</center>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color:#f8f8f8;border-top:1px solid #e7e7e7;border-bottom:1px solid #e7e7e7;">
+	<tbody>
+		<tr>
+			<td>
+				<center>
+					<table border="0" cellpadding="0" cellspacing="0" width="600px" style="height:100%;">
+						<tbody><tr>
+							<td valign="top" style="padding:20px;">
+								© @DateTime.Now.ToString("yyyy") Buc-ee's.
+							</td>
+						</tr>
+					</tbody></table>
+				</center>
+			</td>
+		</tr>
+	</tbody>
+</table>

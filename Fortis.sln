@@ -3,13 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fortis.Api", "Fortis.Api\Fortis.Api.csproj", "{13FF3314-3862-4ABC-9F9F-3AE614A26F52}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fortis.Core", "Fortis.Core\Fortis.Core.csproj", "{F2901171-D98C-4EB2-98B1-8B82A0742BA8}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fortis.Settings", "Fortis.Settings\Fortis.Settings.csproj", "{C92CF78A-F001-4444-92D1-FD3DA5846BC4}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fortis.Store", "Fortis.Store\Fortis.Store.csproj", "{42175B5C-7A65-4C7F-B090-E50612188B09}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fortis.Web", "Fortis.Web\Fortis.Web.csproj", "{4CBCC8F1-3FD8-4C69-9C63-2B5E00E9CD9B}"
 EndProject

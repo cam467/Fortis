@@ -14,6 +14,15 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.1.12" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.8" />
+    <PackageReference Include="NLog" Version="4.7.4" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="4.9.3" />
+    <Content Update="nlog.config" CopyToOutputDirectory="Always" />
+    <None Update="settings.s3db" CopyToOutputDirectory="PreserveNewest" />
+    <Content Update="wwwroot\templates\*">
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+    <PackageReference Include="NSwag.AspNetCore" Version="13.8.2" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,7 +33,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Fortis.Api\Fortis.Api.csproj" />
+    <ProjectReference Include="..\Fortis.Core\Fortis.Core.csproj" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
