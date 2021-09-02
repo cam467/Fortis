@@ -1,4 +1,4 @@
-namespace KnowBe4.Core.Models
+namespace Fortis.Core.Models
 {
     public class SecretServerSecretItem
     {

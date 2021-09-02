@@ -1,4 +1,4 @@
-namespace KnowBe4.Core.Entities
+namespace Fortis.Core.Entities
 {
     using System;
     

@@ -1,4 +1,4 @@
-namespace KnowBe4.Core.Services
+namespace Fortis.Core.Services
 {
     using System.Threading.Tasks;
     using System.Threading;

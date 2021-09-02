@@ -1,4 +1,4 @@
-namespace KnowBe4.Core.Repositories
+namespace Fortis.Core.Repositories
 {
     public interface IUserGroupCommandText
     {

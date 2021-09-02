@@ -1,8 +1,8 @@
-namespace KnowBe4.Core.Services
+namespace Fortis.Core.Services
 {
     using System.Collections.Generic;
-    using KnowBe4.Core.Models;
-    using KnowBe4.Core.Entities;
+    using Fortis.Core.Models;
+    using Fortis.Core.Entities;
 
     public interface IKronosApi
     {

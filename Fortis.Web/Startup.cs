@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Fortis.Core.Utilities;
 
 namespace Fortis.Web
 {
@@ -21,6 +22,8 @@ namespace Fortis.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.RegisterApplicationDependencies();
+            services.RegisterRepositories();
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {

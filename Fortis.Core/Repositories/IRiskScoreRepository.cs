@@ -1,7 +1,7 @@
-namespace KnowBe4.Core.Repositories
+namespace Fortis.Core.Repositories
 {
     using System.Collections.Generic;
-    using KnowBe4.Core.Entities;
+    using Fortis.Core.Entities;
 
     public interface IRiskScoreRepository
     {

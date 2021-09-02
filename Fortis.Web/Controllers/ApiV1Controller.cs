@@ -1,8 +1,8 @@
-namespace KnowBe4.Web.Controllers
+namespace Fortis.Web.Controllers
 {
     using System.Collections.Generic;
-    using KnowBe4.Core.Entities;
-    using KnowBe4.Core.Services;
+    using Fortis.Core.Entities;
+    using Fortis.Core.Services;
     using Microsoft.AspNetCore.Mvc;
 
     [Route("api")]
@@ -10,9 +10,9 @@ namespace KnowBe4.Web.Controllers
     public class ApiController : ControllerBase
     {
         private readonly ILogs _logs;
-        private readonly IKnowBe4Service _service;
+        private readonly IFortisService _service;
 
-        public ApiController(ILogs logs,IKnowBe4Service service)
+        public ApiController(ILogs logs,IFortisService service)
         {
             this._service = service;
             this._logs = logs;

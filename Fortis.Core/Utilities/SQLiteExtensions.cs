@@ -1,4 +1,4 @@
-namespace KnowBe4.Core.Utilities
+namespace Fortis.Core.Utilities
 {
     using System;
     using System.Data;

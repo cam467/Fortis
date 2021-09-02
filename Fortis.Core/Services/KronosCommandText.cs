@@ -1,4 +1,4 @@
-namespace KnowBe4.Core.Services
+namespace Fortis.Core.Services
 {
 
     public class KronosCommandText : IKronosCommandText

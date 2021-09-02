@@ -1,8 +1,8 @@
-namespace KnowBe4.Core.Services
+namespace Fortis.Core.Services
 {
     using System.Data;
     using System.Collections.Generic;
-    using KnowBe4.Core.Models;
+    using Fortis.Core.Models;
     
     public interface ISettings
     {

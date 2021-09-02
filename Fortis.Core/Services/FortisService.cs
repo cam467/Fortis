@@ -1,18 +1,18 @@
-namespace KnowBe4.Core.Services
+namespace Fortis.Core.Services
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using KnowBe4.Core.Entities;
-    using KnowBe4.Core.Models;
-    using KnowBe4.Core.Repositories;
+    using Fortis.Core.Entities;
+    using Fortis.Core.Models;
+    using Fortis.Core.Repositories;
     using System.Data;
 
-    public class KnowBe4Service : IKnowBe4Service
+    public class FortisService : IFortisService
     {
         private readonly ISettings _settings;
         private readonly ILogs _logs;
-        private readonly IKnowBe4Api _api;
+        private readonly IFortisApi _api;
         private readonly IADExtensions _ad;
         private readonly IKronosApi _kronos;
         private readonly IGlobal _global;
@@ -20,7 +20,7 @@ namespace KnowBe4.Core.Services
         private readonly IUserRepository _userrepository;
         private readonly IGroupRepository _grouprepository;
 
-        public KnowBe4Service(ISettings settings, ILogs logs, IKnowBe4Api api, IADExtensions ad, IKronosApi kronos, IGlobal global, IRazorService razorservice, IUserRepository userrepository, IGroupRepository grouprepository)
+        public FortisService(ISettings settings, ILogs logs, IFortisApi api, IADExtensions ad, IKronosApi kronos, IGlobal global, IRazorService razorservice, IUserRepository userrepository, IGroupRepository grouprepository)
         {
             this._settings = settings;
             this._logs = logs;
@@ -111,7 +111,7 @@ namespace KnowBe4.Core.Services
             // _logs.NewLog("update users with no Kronos link: " + Newtonsoft.Json.JsonConvert.SerializeObject(failed));
             // _logs.NewLog("update users: " + Newtonsoft.Json.JsonConvert.SerializeObject(updateuserss));
             // _logs.NewLog("new users: " + Newtonsoft.Json.JsonConvert.SerializeObject(newuserss));
-            // //Update KnowBe4 with AD user data
+            // //Update Fortis with AD user data
             _logs.NewLog("adding " + newusers.Count.ToString() + " new users...");
             _api.AddUsers(newusers);
             _logs.NewLog("deleting " + deleteusers.Count.ToString() + " users...");
@@ -145,7 +145,7 @@ namespace KnowBe4.Core.Services
             // {
             // 	_logs.NewLog("Import Report send error: " + ex.Message);
             // }
-            _global.SendEmail(emailto, "KnowBe4 Sync Log", emailbody);
+            _global.SendEmail(emailto, "Fortis Sync Log", emailbody);
             return true;
         }
 

@@ -1,10 +1,10 @@
-namespace KnowBe4.Core.Repositories
+namespace Fortis.Core.Repositories
 {
     using System;
     using System.Collections.Generic;
-    using KnowBe4.Core.Entities;
-    using KnowBe4.Core.Contexts;
-    using KnowBe4.Core.Services;
+    using Fortis.Core.Entities;
+    using Fortis.Core.Contexts;
+    using Fortis.Core.Services;
 
     public class GroupRepository : BaseRepository, IGroupRepository
     {

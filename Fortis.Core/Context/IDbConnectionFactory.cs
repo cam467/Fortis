@@ -1,4 +1,4 @@
-namespace KnowBe4.Core.Contexts
+namespace Fortis.Core.Contexts
 {
     using System.Data;
 

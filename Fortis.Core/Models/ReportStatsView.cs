@@ -1,7 +1,7 @@
-namespace KnowBe4.Core.Models
+namespace Fortis.Core.Models
 {
     using System.Collections.Generic;
-    using KnowBe4.Core.Entities;
+    using Fortis.Core.Entities;
 
     public class ReportStatsView
 	{

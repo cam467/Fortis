@@ -1,6 +1,6 @@
-namespace KnowBe4.Core.Services
+namespace Fortis.Core.Services
 {
-    using KnowBe4.Core.Models;
+    using Fortis.Core.Models;
     using System.Collections.Generic;
 
     public interface IPasswordRepository

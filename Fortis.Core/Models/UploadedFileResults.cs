@@ -1,4 +1,4 @@
-namespace KnowBe4.Core.Models
+namespace Fortis.Core.Models
 {
     using System.Collections.Generic;
     public class UploadedFileResults

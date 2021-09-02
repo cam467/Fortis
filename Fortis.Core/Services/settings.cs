@@ -1,4 +1,4 @@
-namespace KnowBe4.Core.Services
+namespace Fortis.Core.Services
 {
     using System;
     using System.Data;
@@ -12,8 +12,8 @@ namespace KnowBe4.Core.Services
     using Dapper;
     using Newtonsoft.Json;
     using Newtonsoft.Json.Linq;
-    using KnowBe4.Core.Models;
-    using KnowBe4.Core.Utilities;
+    using Fortis.Core.Models;
+    using Fortis.Core.Utilities;
 
     public class Settings : ISettings
     {

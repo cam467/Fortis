@@ -1,10 +1,10 @@
-namespace KnowBe4.Web.Controllers
+namespace Fortis.Web.Controllers
 {
     using Microsoft.AspNetCore.Mvc;
     using System.Collections.Generic;
     using System.Threading.Tasks;
-    using KnowBe4.Core.Services;
-    using KnowBe4.Core.Models;
+    using Fortis.Core.Services;
+    using Fortis.Core.Models;
     using Microsoft.AspNetCore.Mvc.Filters;
 
     [Route("Settings")]
@@ -13,9 +13,9 @@ namespace KnowBe4.Web.Controllers
         private readonly ILogs _logs;
         private readonly ISettings _settings;
         private readonly ISchedulers _scheduler;
-        private readonly IKnowBe4Api _api;
+        private readonly IFortisApi _api;
 
-        public SettingsController(ILogs logs,ISettings settings,ISchedulers scheduler,IKnowBe4Api api)
+        public SettingsController(ILogs logs,ISettings settings,ISchedulers scheduler,IFortisApi api)
         {
             _logs = logs;
             _settings = settings;

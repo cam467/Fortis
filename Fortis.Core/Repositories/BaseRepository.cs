@@ -1,11 +1,11 @@
-namespace KnowBe4.Core.Repositories
+namespace Fortis.Core.Repositories
 {
-    using KnowBe4.Core.Contexts;
+    using Fortis.Core.Contexts;
     using System;
     using System.Data;
     using Dapper;
     using System.Collections.Generic;
-    using KnowBe4.Core.Services;
+    using Fortis.Core.Services;
 
     public class BaseRepository
     {

@@ -1,11 +1,11 @@
-namespace KnowBe4.Core.Services
+namespace Fortis.Core.Services
 {
     using System;
     using System.Collections.Generic;
     using System.Net;
     using System.Net.Http;
-    using KnowBe4.Core.Models;
-    using KnowBe4.Core.Utilities;
+    using Fortis.Core.Models;
+    using Fortis.Core.Utilities;
     using Newtonsoft.Json;
 
     public class SecretServerApiV1 : IPasswordRepository

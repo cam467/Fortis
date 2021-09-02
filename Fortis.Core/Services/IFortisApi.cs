@@ -1,10 +1,10 @@
-namespace KnowBe4.Core.Services
+namespace Fortis.Core.Services
 {
-    using KnowBe4.Core.Entities;
-    using KnowBe4.Core.Models;
+    using Fortis.Core.Entities;
+    using Fortis.Core.Models;
     using System.Collections.Generic;
 
-    public interface IKnowBe4Api
+    public interface IFortisApi
     {
         bool UploadUserData(byte[] usersfile);
         Account GetAccount();

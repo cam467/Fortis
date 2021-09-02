@@ -1,4 +1,4 @@
-namespace KnowBe4.Core.Services
+namespace Fortis.Core.Services
 {
 	using System;
 	using System.Net.Mail;
@@ -75,7 +75,7 @@ namespace KnowBe4.Core.Services
 					{
 					    mail.To.Add(t);
 					}
-			        mail.From = new MailAddress("noreply@buc-ees.com", "KnowBe4 (NoReply)", System.Text.Encoding.UTF8);
+			        mail.From = new MailAddress("noreply@buc-ees.com", "Fortis (NoReply)", System.Text.Encoding.UTF8);
 			        mail.Subject = subject;
 			        mail.SubjectEncoding = System.Text.Encoding.UTF8;
 			        mail.Priority = MailPriority.Normal;
@@ -106,7 +106,7 @@ namespace KnowBe4.Core.Services
 					{
 					    mail.To.Add(t);
 					}
-			        mail.From = new MailAddress("noreply@buc-ees.com", "KnowBe4 (NoReply)", System.Text.Encoding.UTF8);
+			        mail.From = new MailAddress("noreply@buc-ees.com", "Fortis (NoReply)", System.Text.Encoding.UTF8);
 					foreach(var attach in attachments)
 					{
 						mail.Attachments.Add(new Attachment(new MemoryStream(attach.Value),attach.Key));

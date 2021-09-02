@@ -1,4 +1,4 @@
-namespace KnowBe4.Core.Utilities
+namespace Fortis.Core.Utilities
 {
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
@@ -12,10 +12,10 @@ namespace KnowBe4.Core.Utilities
     using Quartz;
     using Quartz.Impl;
     using Quartz.Spi;
-    using KnowBe4.Core.Migrations;
-    using KnowBe4.Core.Services;
-    using KnowBe4.Core.Contexts;
-    using KnowBe4.Core.Repositories;
+    using Fortis.Core.Migrations;
+    using Fortis.Core.Services;
+    using Fortis.Core.Contexts;
+    using Fortis.Core.Repositories;
     // using Polly;
     // using System;
     // using NLog;
@@ -84,7 +84,7 @@ namespace KnowBe4.Core.Utilities
             services.AddSingleton<IPasswordRepository,SecretServerApiV1>();
             services.AddSingleton<IADExtensions,ADExtensions>();
             services.AddSingleton<IKronosCommandText,KronosCommandText>();
-            services.AddScoped<IKnowBe4Api,KnowBe4Api>();
+            services.AddScoped<IFortisApi,FortisApi>();
             services.AddScoped<IKronosApi,KronosApi>();
             // services.AddScoped<IChaseApi,ChaseApiV2>();
             // services.AddScoped<IChaseService,ChaseService>();
@@ -146,7 +146,7 @@ namespace KnowBe4.Core.Utilities
             services.AddTransient<IGroupRepository,GroupRepository>();
             services.AddTransient<IUserGroupRepository,UserGroupRepository>();
             services.AddTransient<IUserRepository,UserRepository>();
-            services.AddTransient<IKnowBe4Service,KnowBe4Service>();
+            services.AddTransient<IFortisService,FortisService>();
 
             var sc = new ServiceCollection();
             var sp = sc.AddFluentMigratorCore()

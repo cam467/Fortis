@@ -1,4 +1,4 @@
-namespace KnowBe4.Core.Services
+namespace Fortis.Core.Services
 {
     using System;
     using System.Collections.Generic;
@@ -10,7 +10,7 @@ namespace KnowBe4.Core.Services
     using Microsoft.Extensions.Hosting;
     using Quartz;
     using Quartz.Spi;
-    using KnowBe4.Core.Models;
+    using Fortis.Core.Models;
 
     public class Jobs : IJobs
     {

@@ -1,4 +1,4 @@
-namespace KnowBe4.Core.Migrations
+namespace Fortis.Core.Migrations
 {
     using FluentMigrator;
 

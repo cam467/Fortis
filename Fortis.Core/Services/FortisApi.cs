@@ -1,4 +1,4 @@
-namespace KnowBe4.Core.Services
+namespace Fortis.Core.Services
 {
     using System;
     using System.Text;
@@ -13,11 +13,11 @@ namespace KnowBe4.Core.Services
     using RestSharp;
     using Newtonsoft.Json;
     using Newtonsoft.Json.Linq;
-    using KnowBe4.Core.Models;
-    using KnowBe4.Core.Entities;
+    using Fortis.Core.Models;
+    using Fortis.Core.Entities;
     using CsvHelper;
 
-    public class KnowBe4Api : IKnowBe4Api
+    public class FortisApi : IFortisApi
     {
         private RestClient c {get;set;}
         private HttpClient c2 {get;set;}
@@ -30,7 +30,7 @@ namespace KnowBe4.Core.Services
         private readonly ISettings _settings;
         private readonly ILogs _log;
 
-        public KnowBe4Api(ISettings settings, ILogs log)
+        public FortisApi(ISettings settings, ILogs log)
         {
             this._settings = settings;
             this._log = log;
@@ -340,7 +340,7 @@ namespace KnowBe4.Core.Services
             {
                 _log.NewLog("AddUsers Error: " + ex.Message);
             }
-			//upload to knowbe4
+			//upload to Fortis
             this.UploadUserData(ms.ToArray());
             return true;
         }

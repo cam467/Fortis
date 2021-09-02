@@ -1,7 +1,7 @@
-namespace KnowBe4.Core.Services
+namespace Fortis.Core.Services
 {
     using System.Collections.Generic;
-    using KnowBe4.Core.Models;
+    using Fortis.Core.Models;
     public interface IJobs
     {
         List<Job> GetJobs();
